@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # coding:utf-8
-
 '''
 Created on 2017-05-18
 Update  on 2017-05-18
@@ -9,7 +8,6 @@ GitHub: https://github.com/apachecn/MachineLearning
 '''
 
 from numpy import random, mat, eye
-
 '''
 # NumPy 矩阵和数组的区别
 NumPy存在2中不同的数据类型:
@@ -44,15 +42,15 @@ TraRandMat = randMat.T
 ArrRandMat = randMat.A
 # 输出结果
 print 'randArray=(%s) \n' % type(randArray), randArray
+
 print 'randMat=(%s) \n' % type(randMat), randMat
 print 'invRandMat=(%s) \n' % type(invRandMat), invRandMat
 print 'TraRandMat=(%s) \n' % type(TraRandMat), TraRandMat
 print 'ArrRandMat=(%s) \n' % type(ArrRandMat), ArrRandMat
 # 矩阵和逆矩阵 进行求积 (单位矩阵，对角线都为1嘛，理论上4*4的矩阵其他的都为0)
-myEye = randMat*invRandMat
+myEye = randMat * invRandMat
 # 误差
 print myEye - eye(4)
-
 '''
 如果上面的代码运行没有问题，说明numpy安装没有问题
 '''
